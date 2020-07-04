@@ -13,7 +13,7 @@
         android:layout_marginTop="156dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
-        android:text="Tidak memiliki Rekap Kas"
+        android:text="idak memiliki Rekap Kas"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="20sp"

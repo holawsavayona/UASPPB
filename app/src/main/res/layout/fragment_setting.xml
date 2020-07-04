@@ -14,57 +14,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/kavoon"
+                        android:text="Hallo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/andada"
+                        android:text="Ada yang kurang jelas? Tim Qasir akan membantu :)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_14sdp"
                     android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/nunitosans_bold"
+                        android:text="Temukan Yang Anda Cari"
                         android:textColor="@color/textDark"
-                        android:textSize="@dimen/_12ssp"
-                        android:text="Sinkronisasi Data"/>
+                        android:textSize="@dimen/_12ssp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_12sdp"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
+
+                            <EditText
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/textDark"
-                                android:textSize="@dimen/_12ssp"
-                                android:text="Terakhir Disinkronkan"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_2sdp"
-                                android:textColor="@color/textNormal"
-                                android:textSize="@dimen/_10ssp"
-                                android:text="Belum Pernah"/>
+                                android:background="@color/transparent"
+                                android:hint="Cari Artikel Kami"
+                                android:textColor="#F44336"
+                                android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="@dimen/_7sdp"
-                            android:background="@drawable/roundrect_all_fill_accent_outline_accent">
+                            android:background="@drawable/roundrect_all_fill_accent_outline_accent"
+                            android:padding="@dimen/_7sdp">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/nunitosans_bold"
+                                android:text="Cari"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/_10ssp"
-                                android:text="Sinkronkan"/>
+                                android:textSize="@dimen/_10ssp" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -74,222 +103,179 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/nunitosans_bold"
-                        android:textColor="@color/textDark"
-                        android:textSize="@dimen/_12ssp"
-                        android:text="Pajak"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_arrow_right"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/nunitosans_bold"
-                        android:textColor="@color/textDark"
-                        android:textSize="@dimen/_12ssp"
-                        android:text="Kelola Pembayaran Digital"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_arrow_right"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
+                    android:gravity="center"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:padding="@dimen/_15sdp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
                         <TextView
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:fontFamily="@font/nunitosans_bold"
+                            android:text="Bagaimana cara mengelola produk di aplikasi Qasir ?"
                             android:textColor="@color/textDark"
-                            android:textSize="@dimen/_12ssp"
-                            android:text="Perangkat Tambahan"/>
+                            android:textSize="@dimen/_12ssp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Beli Sekarang"
-                            android:textColor="#F44336"
-                            android:textSize="@dimen/_10ssp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_12sdp"
-                        android:background="@color/white"
-                        android:orientation="horizontal"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/textDark"
-                            android:textSize="@dimen/_12ssp"
-                            android:text="Printer"/>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:gravity="center"
                             android:orientation="horizontal">
-                            <TextView
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="Cara Kelola Produk"
+                                    android:textColor="#F44336"
+                                    android:textSize="@dimen/_12ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="@dimen/_2sdp"
-                                android:textSize="@dimen/_10ssp"
-                                android:textColor="@color/textNormal"
-                                android:text="Belum Terhubung"/>
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:srcCompat="@drawable/ic_arrow_right"/>
+                                android:background="@drawable/roundrect_all_fill_accent_outline_accent"
+                                android:padding="@dimen/_7sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunitosans_bold"
+                                    android:text="Cari"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_14sdp"
                         android:background="@color/white"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
                         <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/textDark"
-                            android:textSize="@dimen/_12ssp"
-                            android:text="Barcode Scanner"/>
-                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:text="Bagaimana cara melakukan transaksi pada aplikasi Qasir ?"
+                            android:textColor="@color/textDark"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:gravity="center"
                             android:orientation="horizontal">
-                            <TextView
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="Cara Transaksi Penjualan"
+                                    android:textColor="#F44336"
+                                    android:textSize="@dimen/_12ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="@dimen/_2sdp"
-                                android:textSize="@dimen/_10ssp"
-                                android:textColor="@color/textNormal"
-                                android:text="Belum Terhubung"/>
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:srcCompat="@drawable/ic_arrow_right"/>
+                                android:background="@drawable/roundrect_all_fill_accent_outline_accent"
+                                android:padding="@dimen/_7sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunitosans_bold"
+                                    android:text="Cari"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_14sdp"
                         android:background="@color/white"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
                         <TextView
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:text="Bagaimana cara untuk melihat laporab keuntungan pada usaha kamu ?"
                             android:textColor="@color/textDark"
-                            android:textSize="@dimen/_12ssp"
-                            android:text="Atur Struk"/>
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_arrow_right"/>
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:hint="Ringkasan Penjualan"
+                                android:textColor="#F44336"
+                                android:textSize="@dimen/_12ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/roundrect_all_fill_accent_outline_accent"
+                                android:padding="@dimen/_7sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunitosans_bold"
+                                    android:text="Cari"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+                        </LinearLayout>
                     </LinearLayout>
+
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/nunitosans_bold"
-                        android:textColor="@color/textDark"
-                        android:textSize="@dimen/_12ssp"
-                        android:text="Tampilan Katalog"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="@dimen/_2sdp"
-                            android:text="Grid"
-                            android:textColor="#F44336"
-                            android:textSize="@dimen/_10ssp" />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_arrow_right"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@color/white"
-                    android:padding="@dimen/_15sdp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/nunitosans_bold"
-                        android:textColor="@color/textDark"
-                        android:textSize="@dimen/_12ssp"
-                        android:text="Efek Suara"/>
-                    <Switch
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_15sdp"
-            android:layout_alignParentBottom="true"
-            android:text="Keluar"
-            style="@style/buttonAccent"/>
     </RelativeLayout>
 </layout>

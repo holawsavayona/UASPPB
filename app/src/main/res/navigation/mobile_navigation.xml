@@ -43,6 +43,7 @@
 
     <fragment
         android:id="@+id/help"
-        android:name="com.projects.kasirku.ui.fragments.help.HelpFragment"
-        android:label="Bantuan" />
+        android:name="com.projects.kasirku.ui.fragments.SettingFragment"
+        android:label="Bantuan"
+        tools:layout="@layout/fragment_setting" />
 </navigation>

@@ -5,6 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/andada"
+            android:text="Qasir merupakan aplikasi kasir serba bisa yang mudah digunakan dan tanpa biaya berlangganan.
+Aplikasi Qasir juga cocok untuk berbagai uasaha, seperti Warung, Kedai, Restoran, Online Shop dan lain-lainnya.
+Jual barang ataupun jasa juga bisa dilakukan di aplikasi Qasir ini. Banyak sekali fitur
+di dalam aplikasi Qasir, seperti barcode , terima berbagai digital payment.
+bisa memilih struk cetak atau struk digital, mengetahu stok barang di toko, pencatatan kasbon, dan masih banyak lagi.
+"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text_share"
         android:layout_width="match_parent"
@@ -12,11 +41,42 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/kavoon"
+        android:text="Tentang Qasir"
         android:textAlignment="viewStart"
-        android:textColor="#FFFFFF"
+        android:textColor="#F44336"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="112dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="390dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_share"
+        app:srcCompat="@mipmap/iconqasir" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:background="@mipmap/help"
+        android:onClick="move"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_share"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

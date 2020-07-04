@@ -68,14 +68,14 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:adapter="@{itemAdapter}"
-                        android:clipToPadding="false"
                         android:paddingLeft="@dimen/_10sdp"
-                        android:paddingTop="@dimen/_10sdp"
                         android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
                         android:paddingBottom="@dimen/_125sdp"
+                        android:clipToPadding="false"
+                        android:adapter="@{itemAdapter}"
                         app:setupVerticalRecyclerView="@{@dimen/_10sdp}"
-                        tools:listitem="@layout/item_product" />
+                        tools:listitem="@layout/item_product"/>
 
                 </LinearLayout>
             </androidx.core.widget.NestedScrollView>

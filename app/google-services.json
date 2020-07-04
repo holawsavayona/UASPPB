@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "114871459038",
-    "firebase_url": "https://kasirku-c9f12.firebaseio.com",
-    "project_id": "kasirku-c9f12",
-    "storage_bucket": "kasirku-c9f12.appspot.com"
+    "project_number": "598884639330",
+    "firebase_url": "https://kasirku-c9171.firebaseio.com",
+    "project_id": "kasirku-c9171",
+    "storage_bucket": "kasirku-c9171.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:114871459038:android:f828740474d44cba0ef64f",
+        "mobilesdk_app_id": "1:598884639330:android:ac498525b887c42f4da73b",
         "android_client_info": {
           "package_name": "com.projects.kasirku"
         }
       },
       "oauth_client": [
         {
-          "client_id": "114871459038-9btqmukblds91k6vvl68fl8nhjqfqj6g.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.projects.kasirku",
-            "certificate_hash": "e5c6c5130df17131db6540d89ff90e15175dba3c"
-          }
-        },
-        {
-          "client_id": "114871459038-vh5pt1vavv3q9266uou5kvat0f9gh2ad.apps.googleusercontent.com",
+          "client_id": "598884639330-mivceirv263hq1j2492q8oup8rf64tjo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCvjm4FwK2etM7tMsLOElLOM4LPF8JuTFk"
+          "current_key": "AIzaSyAqrbjrPuNq1LpFKxp4Fi2xk1SAsYnV6pM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "114871459038-vh5pt1vavv3q9266uou5kvat0f9gh2ad.apps.googleusercontent.com",
+              "client_id": "598884639330-mivceirv263hq1j2492q8oup8rf64tjo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
